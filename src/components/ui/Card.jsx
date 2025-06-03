@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 export function Card({ solution }) {
   return (
     <div
@@ -5,8 +7,8 @@ export function Card({ solution }) {
     >
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-base text-gray-400 font-semibold uppercase">
-          {solution.subtitle.map((line, i) => (
-            <span key={i} className="block">
+          {solution.subtitle.map(line => (
+            <span key={line} className="block">
               {line}
             </span>
           ))}
@@ -17,19 +19,29 @@ export function Card({ solution }) {
         ></span>
       </div>
       <h2 className="mt-2 mb-3 text-xl md:text-2xl font-semibold">
-        {solution.title.map((line, i) => (
-          <span key={i} className="block">
+        {solution.title.map(line => (
+          <span key={line} className="block">
             {line}
           </span>
         ))}
       </h2>
       <p className="mt-0 text-gray-300 text-xs md:text-base">
-        {solution.description.map((line, i) => (
-          <span key={i} className="block">
+        {solution.description.map(line => (
+          <span key={line} className="block">
             {line}
           </span>
         ))}
       </p>
     </div>
   )
+}
+
+Card.propTypes = {
+  solution: PropTypes.shape({
+    customClass: PropTypes.string,
+    subtitle: PropTypes.arrayOf(PropTypes.string).isRequired,
+    image: PropTypes.string.isRequired,
+    title: PropTypes.arrayOf(PropTypes.string).isRequired,
+    description: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
 }

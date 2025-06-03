@@ -9,7 +9,6 @@ export default function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* Outras rotas futuras aqui */}
         </Routes>
       </Layout>
     </BrowserRouter>

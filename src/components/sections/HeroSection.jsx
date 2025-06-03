@@ -1,7 +1,4 @@
 import React from 'react'
-import elas from '../../../public/images/HeroSection/elas.png'
-import eles from '../../../public/images/HeroSection/eles.png'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 export default function HeroSection() {
   return (
@@ -17,7 +14,7 @@ export default function HeroSection() {
           <div className="flex items-center gap-2">
             <span className="text-purple_text">Transformando</span>
             <img
-              src={elas}
+              src="/images/HeroSection/elas.png"
               alt="Elas"
               width={178}
               height={87}
@@ -32,7 +29,7 @@ export default function HeroSection() {
           <div className="flex items-center gap-2">
             <span>em</span>
             <img
-              src={eles}
+              src="/images/HeroSection/eles.png"
               alt="Eles"
               width={178}
               height={87}

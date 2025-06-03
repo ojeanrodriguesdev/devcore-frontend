@@ -1,11 +1,15 @@
-import React from 'react'
+import PropTypes from 'prop-types'
 import Header from './Header'
 
 export default function Layout({ children }) {
-  return (
-    <div className="font-sans antialiased">
+  return(
+    <main>
       <Header />
-      <main>{children}</main>
-    </div>
-  )
+      {children}
+    </main>
+  ) 
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 }
