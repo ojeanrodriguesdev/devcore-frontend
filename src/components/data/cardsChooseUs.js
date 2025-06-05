@@ -3,6 +3,12 @@ import bentoUX from '../../assets/WhyChooseUs/bgbentoUX.png'
 import bentoEstra from '../../assets/WhyChooseUs/bgbentoEstra.png'
 import bentoUI from '../../assets/WhyChooseUs/bgbentoUI.png'
 
+export const backgroundClasses = {
+  '/images/WhyChooseUs/bgbentoProg.png': 'bg-[url("/images/WhyChooseUs/bgbentoProg.png")]',
+  '/images/WhyChooseUs/bgbentoUX.png': 'bg-[url("/images/WhyChooseUs/bgbentoUX.png")]',
+  '/images/WhyChooseUs/bgbentoEstra.png': 'bg-[url("/images/WhyChooseUs/bgbentoEstra.png")]',
+}
+
 export const cards = [
     {
       category: 'PROGRAMAÇÃO',
