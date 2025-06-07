@@ -5,10 +5,10 @@ import starcases from '../../assets/icons/starcases.png'
 
 export function CasesSection() {
   return (
-    <section className="w-full bg-black py-20">
-      <div className="max-w-7xl px-2 sm:px-9 mx-auto">
+    <section className="px-6 md:px-24 py-20 bg-black text-white">
+      <div className=" px-2 sm:px-4 mx-auto">
         {/* Header horizontal com estrela, título e botão */}
-        <div className="flex items-center justify-start gap-4 flex-wrap">
+        <div className="flex items-center justify-start gap-x-4 flex-wrap">
           {/* Estrela + Título */}
           <motion.h2
             className="flex items-center gap-3 text-2xl sm:text-4xl font-bold text-white"
@@ -30,7 +30,7 @@ export function CasesSection() {
         </div>
 
         {/* Slider */}
-        <div className="mt-12">
+        <div className="flex items-center justify-center mt-5">
           <CaseSlider cases={caseData} />
         </div>
       </div>
